@@ -71,13 +71,9 @@ function FactorialNum($num){
 }
 // Create Fibonacci Array   
 function Fibonacci($n){
-    
-   
- 
         if ($n <= 1)
             return $n;
         return Fibonacci($n-1) + Fibonacci($n-2);
-   
 } 
 
 
@@ -110,9 +106,28 @@ function qustion6($nu){
     echo " </h3> </pre>";
 }
 
+// qustion number 9 
+
+function qustion9(){
+    echo "<pre> <h3>";
+    $n =1;
+    for ($i=0; $i < 6; $i++) { 
+        for ($j=0; $j <$i ; $j++) { 
+            echo " $n";
+            $n++;
+        }
+      
+        
+        echo "<br>";
+    }
+    echo "</h3> </pre>";
+    
+}
+
 
 
 qustion1($arrm);
 qustion4($arrm);
 qustion5(5);
 qustion6(10);
+qustion9();
